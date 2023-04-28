@@ -5,6 +5,7 @@ import { BsTags, BsBell } from 'react-icons/bs';
 import { FiThumbsUp } from 'react-icons/fi';
 import { FiUsers } from 'react-icons/fi';
 import { FaUserCircle } from 'react-icons/fa';
+import { MdArrowForwardIos } from 'react-icons/md';
 import { AiOutlineDashboard, AiOutlineSetting, AiOutlineSchedule } from 'react-icons/ai';
 import Chartapex from './Chartapex';
 import Pichart from './Pichart';
@@ -17,7 +18,7 @@ export default function Dashgrid() {
             <div className='sidebar-container bg-black h-full text-white rounded-2xl mt-5 ms-10 p-5'>
                 {/* Head-box */}
                 <div className='title-box text-4xl font-bold'>
-                    <h1 className=' ps-5'>Board.</h1></div>
+                    <h1 className=' ps-5 ms-10 mt-5'>Board.</h1></div>
 
                 {/* Menu box list */}
                 <div className="menu-box mt-6">
@@ -40,8 +41,7 @@ export default function Dashgrid() {
             </div>
 
             {/* Main-container */}
-            <div className="main-container  mx-5 text-black">
-
+            <div className=" main-container  mx-5 text-black">
                 <div className='main-header text-black pt-5 pb-3'>
                     <h1 className='text-3xl font-bold '>Dashbord</h1>
                     <div className='search-box'>
@@ -68,8 +68,8 @@ export default function Dashgrid() {
                                 />
                             </div>
                         </form>
-                        <span className='float-left mx-2'><a href="#"><BsBell size={25}/> </a></span>
-                        <span className='float-left mx-2'><a href="#"><FaUserCircle size={25}/></a></span>
+                        <span className='float-left mx-2'><a href="#"><BsBell size={25} /> </a></span>
+                        <span className='float-left mx-2'><a href="#"><FaUserCircle size={25} /></a></span>
                     </div>
 
                 </div>
@@ -101,30 +101,47 @@ export default function Dashgrid() {
                     <div className='bottom-box1 bg-white h-full rounded-2xl p-4'>
                         <div className='flex justify-between'>
                             <h3 className=''>Top products</h3>
-                            <p>Drop dpwn</p>
-                                                        </div>
-                       <div className='flex justify-start pt-8'><Pichart/>
-                       </div> 
+
+                            <button id="dropdownHover" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className=" rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center font-light" type="button">May-june 2021 <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            {/* <!-- Dropdown menu --> */}
+                            <div id="dropdownHover" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div className='flex justify-start pt-8'><Pichart />
+                        </div>
                     </div>
 
                     <div className='bottom-box2 bg-white rounded-2xl p-4' >
                         <div className='flex justify-between'>
-                            <h3> Todays</h3>
-                            <p>menu drop</p>                            
+                            <h3 > Todays</h3>
+                            <p className='float-right'>See All <span className='float-right'><MdArrowForwardIos /> </span></p>
                         </div>
-                         <div className='border-l-8 border-green-900 mt-5'>
+                        <div className='border-l-8 border-[#9BDD7C] mt-5'>
                             <h6 className='font-normal ps-2'>Meeting with suppliers from Kuta Bali</h6>
                             <p className='font-extralight ps-2'>14.00-15.00</p>
                             <p className='font-extralight ps-2'>at Sunset Road, Kuta, Bali </p>
-                         </div>
-                         <div className='border-l-8 border-green-900 mt-5'>
+                        </div>
+                        <div className='border-l-8 border-[#6972C3] mt-5'>
                             <h6 className='ps-2'>Meeting with suppliers from Kuta Bali</h6>
                             <p className='font-extrathin ps-2'>14.00-15.00</p>
                             <p className='font-extralight ps-2'>at Sunset Road, Kuta, Bali </p>
-                         </div>
+                        </div>
                     </div>
-
-
                 </div>
 
             </div>

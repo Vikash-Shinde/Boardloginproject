@@ -65,9 +65,15 @@
     grid-row: 5/7;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 /* appling for Media querry  */
-
+/* 
 
     @media screen and (max-width: 992px) {
     /* .grid-container {
@@ -77,9 +83,24 @@
     } */
 
 
-    .grid-container{
+    /* .grid-container{
         display: grid;
         grid-template-columns: 1fr;
-        
+
     }
-}
+
+    .menu-box li {
+        float: left;
+    }
+
+    .menu-footer a {
+        float: left;
+        padding-left: 2rem;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+
+    } */
+/* } */
