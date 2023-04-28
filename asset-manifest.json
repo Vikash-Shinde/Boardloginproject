@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Boardloginproject/static/css/main.e390709d.css",
+    "main.js": "/Boardloginproject/static/js/main.dddf6a75.js",
+    "static/js/651.4132edc9.chunk.js": "/Boardloginproject/static/js/651.4132edc9.chunk.js",
+    "static/media/logo.svg": "/Boardloginproject/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Boardloginproject/index.html",
+    "main.e390709d.css.map": "/Boardloginproject/static/css/main.e390709d.css.map",
+    "main.dddf6a75.js.map": "/Boardloginproject/static/js/main.dddf6a75.js.map",
+    "651.4132edc9.chunk.js.map": "/Boardloginproject/static/js/651.4132edc9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e390709d.css",
+    "static/js/main.dddf6a75.js"
+  ]
+}
